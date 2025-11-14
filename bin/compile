@@ -33,8 +33,8 @@ for DIR in ".m2" ".maven" ; do
   cp -r $CACHE_DIR/$DIR $BUILD_DIR/$DIR
 done
 
-rm -rf /app/target/fractals-jpro
-mkdir -p /app/target/fractals-jpro
+# rm -rf /app/target/fractals-jpro
+# mkdir -p /app/target/fractals-jpro
 chmod +x /app/target/fractals-jpro.zip
 unzip -o -d /app/target /app/target/fractals-jpro.zip
 chmod +x /app/target/fractals-jpro/bin/start.sh
