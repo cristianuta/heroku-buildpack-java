@@ -34,7 +34,7 @@ for DIR in ".m2" ".maven" ; do
 done
 
 rm -rf /app/target/fractals-jpro
-unzip -o -d /app/target app/target/fractals-jpro.zip
+unzip -o -d /app/target /app/target/fractals-jpro.zip
 chmod +x /app/target/fractals-jpro/bin/start.sh
 chmod +x /app/target/fractals-jpro/bin/stop.sh
 chmod +x /app/target/fractals-jpro/bin/restart.sh
