@@ -27,19 +27,22 @@ maven::setup_maven_and_build_app \
 	"${CACHE_DIR}" \
 	"${MAVEN_JAVA_OPTS:-""}" \
 	"${MAVEN_CUSTOM_OPTS:-"-DskipTests"}" \
-	"${MAVEN_CUSTOM_GOALS:-"clean dependency:list package jpro:release -Djpro.port=9090"}"
+	"${MAVEN_CUSTOM_GOALS:-"clean dependency:list package -U jpro:release -Djpro.port=9090"}"
 
 for DIR in ".m2" ".maven" ; do
   cp -r $CACHE_DIR/$DIR $BUILD_DIR/$DIR
 done
 
 rm -rf /app/target/fractals-jpro
+
 # fix - directory in directory
 chmod +x /${BUILD_DIR}/target/fractals-jpro.zip
 unzip -o -d /app/target ${BUILD_DIR}/target/fractals-jpro.zip
+
 # fix - directory in directory unzip
-chmod +x /app/targe/fractals-jpro.zip
+chmod +x /app/target/fractals-jpro.zip
 unzip -o -d /app/target /app/target/fractals-jpro.zip
+
 chmod +x /app/target/fractals-jpro/bin/start.sh
 chmod +x /app/target/fractals-jpro/bin/stop.sh
 chmod +x /app/target/fractals-jpro/bin/restart.sh
