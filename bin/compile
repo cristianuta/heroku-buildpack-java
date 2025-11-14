@@ -36,6 +36,6 @@ done
 rm -rf "${BUILD_DIRECTORY}"
 mkdir "${BUILD_DIRECTORY}"
 unzip -o -d ${BUILD_DIRECTORY} ${BUILD_DIR}/target/fractals-jpro.zip
-chmod +x ${BUILD_DIR}/target/fractals-jpro/bin/start.sh
-chmod +x ${BUILD_DIR}/target/fractals-jpro/bin/stop.sh
-chmod +x ${BUILD_DIR}/target/fractals-jpro/bin/restart.sh
+chmod +x ${BUILD_DIRECTORY}/target/fractals-jpro/bin/start.sh
+chmod +x ${BUILD_DIRECTORY}/target/fractals-jpro/bin/stop.sh
+chmod +x ${BUILD_DIRECTORY}/target/fractals-jpro/bin/restart.sh
