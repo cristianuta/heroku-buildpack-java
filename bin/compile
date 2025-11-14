@@ -38,3 +38,5 @@ unzip -o -d /app/target ${BUILD_DIR}/target/fractals-jpro.zip
 chmod +x /app/target/fractals-jpro/bin/start.sh
 chmod +x /app/target/fractals-jpro/bin/stop.sh
 chmod +x /app/target/fractals-jpro/bin/restart.sh
+chmod +x /app/target/fractals-jpro/bin/start-background.sh
+chmod +x /app/target/fractals-jpro/bin/restart-background.sh
