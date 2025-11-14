@@ -33,7 +33,8 @@ for DIR in ".m2" ".maven" ; do
   cp -r $CACHE_DIR/$DIR $BUILD_DIR/$DIR
 done
 
-unzip -o target/fractals-jpro.zip
-chmod +x fractals-jpro/bin/start.sh
-chmod +x fractals-jpro/bin/stop.sh
-chmod +x fractals-jpro/bin/restart.sh
+unzip -o ${BUILD_DIR}/target/fractals-jpro.zip
+chmod +x ${BUILD_DIR}/target/fractals-jpro/bin/start.sh
+chmod +x ${BUILD_DIR}/target/fractals-jpro/bin/stop.sh
+chmod +x ${BUILD_DIR}/target/fractals-jpro/bin/restart.sh
+
