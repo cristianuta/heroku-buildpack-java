@@ -35,7 +35,7 @@ done
 
 rm -rf /app/target/fractals-jpro
 chmod +x /${BUILD_DIR}/target/fractals-jpro.zip
-mkdir /app/target/fractals-jpro
+mkdir -p /app/target/fractals-jpro
 unzip -o -d /app/target ${BUILD_DIR}/target/fractals-jpro.zip
 chmod +x /app/target/fractals-jpro/bin/start.sh
 chmod +x /app/target/fractals-jpro/bin/stop.sh
