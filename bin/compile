@@ -40,3 +40,4 @@ chmod +x /app/target/fractals-jpro/bin/stop.sh
 chmod +x /app/target/fractals-jpro/bin/restart.sh
 chmod +x /app/target/fractals-jpro/bin/start-background.sh
 chmod +x /app/target/fractals-jpro/bin/restart-background.sh
+chmod +x /app/target/fractals-1.0-SNAPSHOT.jar
