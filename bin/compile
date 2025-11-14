@@ -39,6 +39,12 @@ rm -rf /app/target/fractals-jpro
 chmod +x /${BUILD_DIR}/target/fractals-jpro.zip
 unzip -o ${BUILD_DIR}/target/fractals-jpro.zip
 
+chmod +x fractals-jpro/bin/start.sh
+chmod +x fractals-jpro/bin/stop.sh
+chmod +x fractals-jpro/bin/restart.sh
+chmod +x fractals-jpro/bin/start-background.sh
+chmod +x fractals-jpro/bin/restart-background.sh
+
 #cd /app/target
 #chmod +x fractals-jpro.zip
 #unzip fractals-jpro.zip
@@ -47,8 +53,8 @@ unzip -o ${BUILD_DIR}/target/fractals-jpro.zip
 #chmod +x /app/target/fractals-jpro.zip
 #unzip -o -d /app/target /app/target/fractals-jpro.zip
 
-chmod +x /app/target/fractals-jpro/bin/start.sh
-chmod +x /app/target/fractals-jpro/bin/stop.sh
-chmod +x /app/target/fractals-jpro/bin/restart.sh
-chmod +x /app/target/fractals-jpro/bin/start-background.sh
-chmod +x /app/target/fractals-jpro/bin/restart-background.sh
+#chmod +x /app/target/fractals-jpro/bin/start.sh
+#chmod +x /app/target/fractals-jpro/bin/stop.sh
+#chmod +x /app/target/fractals-jpro/bin/restart.sh
+#chmod +x /app/target/fractals-jpro/bin/start-background.sh
+#chmod +x /app/target/fractals-jpro/bin/restart-background.sh
