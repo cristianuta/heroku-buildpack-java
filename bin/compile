@@ -37,7 +37,10 @@ rm -rf /app/target/fractals-jpro
 
 # fix - directory in directory
 chmod +x /${BUILD_DIR}/target/fractals-jpro.zip
-unzip -o ${BUILD_DIR}/target/fractals-jpro.zip
+unzip -o -d /app/target ${BUILD_DIR}/target/fractals-jpro.zip
+
+chmod +x /app/target/fractals-jpro.zip
+unzip -o /app/target/fractals-jpro.zip
 
 chmod +x fractals-jpro/bin/start.sh
 chmod +x fractals-jpro/bin/stop.sh
