@@ -33,4 +33,4 @@ for DIR in ".m2" ".maven" ; do
   cp -r $CACHE_DIR/$DIR $BUILD_DIR/$DIR
 done
 
-unzip -o ${BUILD_DIR}/fractals-jpro.zip
+unzip -o ${BUILD_DIR}/target/fractals-jpro.zip
