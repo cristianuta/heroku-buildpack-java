@@ -34,8 +34,11 @@ for DIR in ".m2" ".maven" ; do
 done
 
 rm -rf /app/target/fractals-jpro
+# fix - directory in directory
 chmod +x /${BUILD_DIR}/target/fractals-jpro.zip
 unzip -o -d /app/target ${BUILD_DIR}/target/fractals-jpro.zip
+# fix - directory in directory unzip
+chmod +x /app/targe/fractals-jpro.zip
 unzip -o -d /app/target /app/target/fractals-jpro.zip
 chmod +x /app/target/fractals-jpro/bin/start.sh
 chmod +x /app/target/fractals-jpro/bin/stop.sh
