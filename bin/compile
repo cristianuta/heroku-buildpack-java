@@ -39,6 +39,8 @@ rm -rf /app/target/fractals-jpro
 chmod +x /${BUILD_DIR}/target/fractals-jpro.zip
 unzip -o -d /app/target ${BUILD_DIR}/target/fractals-jpro.zip
 
+cd /app/target
+chmod +x fractals-jpro.zip
 unzip fractals-jpro.zip
 
 # fix - directory in directory unzip
